@@ -1,0 +1,30 @@
+= Springer Ebook Downloader
+
+
+Run instructions:
+
+- Python 3.7.7+ (tested on)
+- https://textract.readthedocs.io/en/latest/installation.html[textract]
+
+== Create a virtualenv and activete
+
+[source,bash,indent=0]
+----
+$ virtualenv venv
+$ source venv/bin/activate 
+----
+
+== Install dependencies
+
+[source,bash,indent=0]
+----
+$ pip install -r requirements.txt
+----
+
+
+== Run the program
+
+[source,bash,indent=0]
+----
+$ python application.py /path/where/you/want/to/save
+----
