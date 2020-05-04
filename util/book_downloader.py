@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 from requests import Session
 import re
 from urllib.parse import urlparse
-from pathlib import Path
 import os
 
 
@@ -27,8 +26,7 @@ class Downloader:
 
     def __download_file(self, url, download_path):
         file_name = f"{download_path}/{url[0]}.pdf"
-        file_path = Path(download_path)
-        if not os.path.isfile(file_name):
+        if not os.path.isfile(file_name): #Check if the file already exists locally
             with self.__s.get(url[1], stream=True) as r:
                 r.raise_for_status()
                 with open(file_name, 'wb') as f:
