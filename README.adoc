@@ -6,7 +6,7 @@ Run instructions:
 - Python 3.7.7+ (tested on)
 - https://textract.readthedocs.io/en/latest/installation.html[textract]
 
-== Create a virtualenv and activete
+== Create a virtualenv and activate
 
 [source,bash,indent=0]
 ----
